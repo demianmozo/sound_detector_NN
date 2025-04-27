@@ -1,0 +1,103 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Apr 11 14:18:37 2025
+| Host         : workspace running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_drc -file MLZedboard_wrapper_drc_opted.rpt -pb MLZedboard_wrapper_drc_opted.pb -rpx MLZedboard_wrapper_drc_opted.rpx
+| Design       : MLZedboard_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 13
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 3          |
+| DPOP-1 | Warning  | PREG Output pipelining | 5          |
+| DPOP-2 | Warning  | MREG Output pipelining | 5          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout input MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__0 input MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__1 input MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/mul_16s_5ns_19_1_1_U784/dout output MLZedboard_i/inference_0/inst/grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/mul_16s_5ns_19_1_1_U784/dout/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout output MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__0 output MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__1 output MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__2 output MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/mul_16s_5ns_19_1_1_U784/dout multiplier stage MLZedboard_i/inference_0/inst/grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/mul_16s_5ns_19_1_1_U784/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout multiplier stage MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__0 multiplier stage MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__1 multiplier stage MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__2 multiplier stage MLZedboard_i/inference_0/inst/mul_32s_34ns_65_1_1_U807/dout__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+

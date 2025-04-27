@@ -1,0 +1,462 @@
+
+*** Running vivado
+    with args -log MLZedboard_comblock_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLZedboard_comblock_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source MLZedboard_comblock_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1312.727 ; gain = 0.023 ; free physical = 184 ; free virtual = 6747
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/core-comblock/src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/myproject_prj/solution1/impl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MLZedboard_comblock_0_0
+Command: synth_design -top MLZedboard_comblock_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22644
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1976.152 ; gain = 370.801 ; free physical = 160 ; free virtual = 5361
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1301.724; parent = 1133.417; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2975.219; parent = 1979.125; children = 996.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MLZedboard_comblock_0_0' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_comblock_0_0/synth/MLZedboard_comblock_0_0.vhd:98]
+	Parameter REGS_IN_ENA bound to: 1 - type: bool 
+	Parameter REGS_IN_DWIDTH bound to: 32 - type: integer 
+	Parameter REGS_IN_DEPTH bound to: 4 - type: integer 
+	Parameter REGS_OUT_ENA bound to: 1 - type: bool 
+	Parameter REGS_OUT_DWIDTH bound to: 32 - type: integer 
+	Parameter REGS_OUT_DEPTH bound to: 4 - type: integer 
+	Parameter DRAM_IO_ENA bound to: 0 - type: bool 
+	Parameter DRAM_IO_DWIDTH bound to: 16 - type: integer 
+	Parameter DRAM_IO_AWIDTH bound to: 16 - type: integer 
+	Parameter DRAM_IO_DEPTH bound to: 65535 - type: integer 
+	Parameter FIFO_IN_ENA bound to: 0 - type: bool 
+	Parameter FIFO_IN_DWIDTH bound to: 16 - type: integer 
+	Parameter FIFO_IN_DEPTH bound to: 1024 - type: integer 
+	Parameter FIFO_IN_AFOFFSET bound to: 1 - type: integer 
+	Parameter FIFO_IN_AEOFFSET bound to: 1 - type: integer 
+	Parameter FIFO_OUT_ENA bound to: 1 - type: bool 
+	Parameter FIFO_OUT_DWIDTH bound to: 32 - type: integer 
+	Parameter FIFO_OUT_DEPTH bound to: 1024 - type: integer 
+	Parameter FIFO_OUT_AFOFFSET bound to: 1 - type: integer 
+	Parameter FIFO_OUT_AEOFFSET bound to: 1 - type: integer 
+	Parameter C_AXIF_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIF_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'axi_comblock' declared at '/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl:17' bound to instance 'U0' of component 'axi_comblock' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_comblock_0_0/synth/MLZedboard_comblock_0_0.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'axi_comblock' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl:186]
+INFO: [Synth 8-638] synthesizing module 'AXIL' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axil.vhdl:91]
+INFO: [Synth 8-256] done synthesizing module 'AXIL' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axil.vhdl:91]
+INFO: [Synth 8-638] synthesizing module 'AXIF' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axif.vhdl:173]
+INFO: [Synth 8-256] done synthesizing module 'AXIF' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axif.vhdl:173]
+INFO: [Synth 8-638] synthesizing module 'ComBlock' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:125]
+INFO: [Synth 8-638] synthesizing module 'FIFO' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl:58]
+INFO: [Synth 8-638] synthesizing module 'tdpram' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/tdpram.vhdl:37]
+INFO: [Synth 8-256] done synthesizing module 'tdpram' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/tdpram.vhdl:37]
+INFO: [Synth 8-638] synthesizing module 'GraySync' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/graysync.vhdl:29]
+INFO: [Synth 8-256] done synthesizing module 'GraySync' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/graysync.vhdl:29]
+INFO: [Synth 8-226] default block is never used [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl:120]
+INFO: [Synth 8-256] done synthesizing module 'FIFO' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl:58]
+INFO: [Synth 8-256] done synthesizing module 'ComBlock' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:125]
+INFO: [Synth 8-256] done synthesizing module 'axi_comblock' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl:186]
+INFO: [Synth 8-256] done synthesizing module 'MLZedboard_comblock_0_0' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_comblock_0_0/synth/MLZedboard_comblock_0_0.vhd:98]
+WARNING: [Synth 8-6014] Unused sequential element fifo_in_clear_reg was removed.  [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:361]
+WARNING: [Synth 8-6014] Unused sequential element fifo_in_under_r_reg was removed.  [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:379]
+WARNING: [Synth 8-3848] Net ram_data_o in module/entity ComBlock does not have driver. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:87]
+WARNING: [Synth 8-3848] Net fifo_in_full_o in module/entity ComBlock does not have driver. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:93]
+WARNING: [Synth 8-3848] Net fifo_in_afull_o in module/entity ComBlock does not have driver. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:94]
+WARNING: [Synth 8-3848] Net fifo_in_overflow_o in module/entity ComBlock does not have driver. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:95]
+WARNING: [Synth 8-3848] Net mem_data_o in module/entity ComBlock does not have driver. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl:121]
+WARNING: [Synth 8-7129] Port ram_data_o[15] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[14] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[13] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[12] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[11] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[10] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[9] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[8] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[7] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[6] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[5] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[4] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[3] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[2] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[1] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_o[0] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_full_o in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_afull_o in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_overflow_o in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[15] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[14] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[13] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[12] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[11] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[10] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[9] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[8] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[7] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[6] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[5] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[4] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[3] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[2] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[1] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_data_o[0] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_clk_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_we_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[15] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[14] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[13] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[12] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[11] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[10] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[9] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[8] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[7] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[6] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[5] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[4] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[3] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[2] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[1] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_addr_i[0] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[15] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[14] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[13] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[12] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[11] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[10] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[9] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[8] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[7] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[6] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[5] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[4] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[3] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[2] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[1] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_data_i[0] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_clk_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_clear_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_we_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[15] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[14] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[13] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[12] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[11] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[10] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[9] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[8] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[7] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[6] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[5] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[4] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[3] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[2] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[1] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fifo_in_data_i[0] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_clk_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_we_i in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[15] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[14] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[13] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[12] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[11] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[10] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[9] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[8] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[7] in module ComBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr_i[6] in module ComBlock is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2055.090 ; gain = 449.738 ; free physical = 286 ; free virtual = 5332
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3051.188; parent = 2055.094; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2072.902 ; gain = 467.551 ; free physical = 288 ; free virtual = 5334
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3069.000; parent = 2072.906; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2072.902 ; gain = 467.551 ; free physical = 288 ; free virtual = 5334
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3069.000; parent = 2072.906; children = 996.094
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2072.902 ; gain = 0.000 ; free physical = 288 ; free virtual = 5334
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2197.637 ; gain = 0.000 ; free physical = 142 ; free virtual = 5201
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2197.637 ; gain = 0.000 ; free physical = 141 ; free virtual = 5201
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 188 ; free virtual = 5001
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 181 ; free virtual = 4994
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 181 ; free virtual = 4994
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "tdpram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 335 ; free virtual = 5161
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
++---XORs : 
+	   2 Input     11 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               32 Bit    Registers := 19    
+	               18 Bit    Registers := 2     
+	               11 Bit    Registers := 6     
+	                8 Bit    Registers := 6     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 21    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 4     
+	   3 Input   11 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 55    
+	   4 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 247 ; free virtual = 5072
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1367.459; parent = 1199.152; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------+------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MLZedboard_comblock_0_0 | U0/comblock_i/fifo_out_g.fifo_out_i/i_memory/ram_reg | 1 K x 32(NO_CHANGE)    | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------------------+------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 150 ; free virtual = 4967
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.358; parent = 1241.077; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 147 ; free virtual = 4964
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.483; parent = 1241.202; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------+------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                                           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MLZedboard_comblock_0_0 | U0/comblock_i/fifo_out_g.fifo_out_i/i_memory/ram_reg | 1 K x 32(NO_CHANGE)    | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------------------+------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/comblock_i/fifo_out_g.fifo_out_i/i_memory/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 191 ; free virtual = 4962
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.979; parent = 1241.698; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 163 ; free virtual = 4646
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 147 ; free virtual = 4631
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 158 ; free virtual = 4607
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 161 ; free virtual = 4595
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 153 ; free virtual = 4579
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 172 ; free virtual = 4583
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    18|
+|2     |LUT1     |     1|
+|3     |LUT2     |    58|
+|4     |LUT3     |    18|
+|5     |LUT4     |    37|
+|6     |LUT5     |    26|
+|7     |LUT6     |   104|
+|8     |RAMB36E1 |     1|
+|9     |FDRE     |   242|
+|10    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2197.637 ; gain = 592.285 ; free physical = 144 ; free virtual = 4556
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1410.249; parent = 1241.968; children = 168.307
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3193.734; parent = 2197.641; children = 996.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 178 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 2197.637 ; gain = 467.551 ; free physical = 168 ; free virtual = 4547
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2197.645 ; gain = 592.285 ; free physical = 160 ; free virtual = 4539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2197.645 ; gain = 0.000 ; free physical = 240 ; free virtual = 4608
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.645 ; gain = 0.000 ; free physical = 148 ; free virtual = 4516
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 63d3fd63
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 2197.645 ; gain = 884.918 ; free physical = 362 ; free virtual = 4731
+INFO: [Common 17-1381] The checkpoint '/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_comblock_0_0_synth_1/MLZedboard_comblock_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MLZedboard_comblock_0_0, cache-ID = 7513127a4e14ddf9
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_comblock_0_0_synth_1/MLZedboard_comblock_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MLZedboard_comblock_0_0_utilization_synth.rpt -pb MLZedboard_comblock_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 05:28:33 2025...

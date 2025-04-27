@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/axil.vhdl" \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/axif.vhdl" \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/tdpram.vhdl" \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/graysync.vhdl" \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/fifo.vhdl" \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/comblock.vhdl" \
+"../../../bd/MLZedboard/ipshared/7b64/hdl/axi_comblock.vhdl" \
+"../../../bd/MLZedboard/ip/MLZedboard_comblock_0_0/sim/MLZedboard_comblock_0_0.vhd" \
+"../../../bd/MLZedboard/ip/MLZedboard_rst_ps7_0_100M_0/sim/MLZedboard_rst_ps7_0_100M_0.vhd" \
+
+nosort

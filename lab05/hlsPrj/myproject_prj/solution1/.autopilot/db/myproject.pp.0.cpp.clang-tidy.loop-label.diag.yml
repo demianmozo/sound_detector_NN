@@ -1,0 +1,697 @@
+---
+MainSourceFile:  /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          787014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          994534
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          994977
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          995421
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1257416
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1607173
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1607548
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_1:  '
+    FileOffset:      265
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2287181
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2287568
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2287903
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_293_1:  '
+    FileOffset:      293
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2288126
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_293_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_2:  '
+    FileOffset:      295
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2288221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2288585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_2:  '
+    FileOffset:      309
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2288667
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_1:  '
+    FileOffset:      324
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2289010
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_344_1:  '
+    FileOffset:      344
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2289463
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_344_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_2:  '
+    FileOffset:      345
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2289508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_1:  '
+    FileOffset:      360
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2289917
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_1:  '
+    FileOffset:      367
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2290130
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_1:  '
+    FileOffset:      31
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2293248
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_1:  '
+    FileOffset:      43
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2293501
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_1:  '
+    FileOffset:      57
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2293862
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_1:  '
+    FileOffset:      84
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2294678
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_1:  '
+    FileOffset:      114
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2295339
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_1:  '
+    FileOffset:      151
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2296473
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_162_1:  '
+    FileOffset:      162
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2296835
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_162_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_1:  '
+    FileOffset:      195
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2297738
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_2:  '
+    FileOffset:      209
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2298257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_1:  '
+    FileOffset:      243
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2299097
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_252_2:  '
+    FileOffset:      252
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2299367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_252_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_266_3:  '
+    FileOffset:      266
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2299891
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_266_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_273_1:  '
+    FileOffset:      273
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2300125
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_273_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2300485
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_323_1:  '
+    FileOffset:      323
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2301414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_323_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_328_2:  '
+    FileOffset:      328
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2301531
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_328_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_329_3:  '
+    FileOffset:      329
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2301585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_329_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_346_4:  '
+    FileOffset:      346
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2302166
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_346_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_359_1:  '
+    FileOffset:      359
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2302653
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_359_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_2:  '
+    FileOffset:      367
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2302794
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_402_1:  '
+    FileOffset:      402
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2303759
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_402_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_432_1:  '
+    FileOffset:      432
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2304396
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_432_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_451_1:  '
+    FileOffset:      451
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2304909
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_451_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_467_1:  '
+    FileOffset:      467
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2305367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_467_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_485_1:  '
+    FileOffset:      485
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2305821
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_485_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_502_1:  '
+    FileOffset:      502
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2306208
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_502_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_519_1:  '
+    FileOffset:      519
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2306603
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_519_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_549_1:  '
+    FileOffset:      549
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2307269
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_549_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_568_1:  '
+    FileOffset:      568
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2307843
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_568_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_598_1:  '
+    FileOffset:      598
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2308509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_598_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_617_1:  '
+    FileOffset:      617
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2309063
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_617_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_647_1:  '
+    FileOffset:      647
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2309695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_647_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_674_1:  '
+    FileOffset:      674
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2310521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_674_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2311139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_724_1:  '
+    FileOffset:      724
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2311750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_724_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_742_1:  '
+    FileOffset:      742
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2312139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_742_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_762_1:  '
+    FileOffset:      762
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2312535
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_762_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_1:  '
+    FileOffset:      73
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2314611
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_80_2:  '
+    FileOffset:      80
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2314751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_80_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_89_3:  '
+    FileOffset:      89
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2315016
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_89_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_98_4:  '
+    FileOffset:      98
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2315210
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_98_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_5:  '
+    FileOffset:      102
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2315303
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_6:  '
+    FileOffset:      113
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2315629
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_7:  '
+    FileOffset:      117
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2315739
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_141_1:  '
+    FileOffset:      141
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2316689
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_141_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_2:  '
+    FileOffset:      145
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2316775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_164_1:  '
+    FileOffset:      164
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2317435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_164_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_1:  '
+    FileOffset:      187
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2318367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_2:  '
+    FileOffset:      190
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2318505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_3:  '
+    FileOffset:      195
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2318655
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_4:  '
+    FileOffset:      199
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2318779
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_1:  '
+    FileOffset:      213
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2324622
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_2:  '
+    FileOffset:      222
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2324906
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_328_1:  '
+    FileOffset:      328
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2328119
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_328_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_333_2:  '
+    FileOffset:      333
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2328261
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_333_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_341_3:  '
+    FileOffset:      341
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2328465
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_341_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_dense_compressed.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2354251
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_1:  '
+    FileOffset:      74
+    FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/firmware/nnet_utils/nnet_dense_compressed.h
+    Replacements:    
+      - FilePath:        /home/student/Documents/PROYECTO_FINAL/lab05/hlsPrj/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2356122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_1: '
+...

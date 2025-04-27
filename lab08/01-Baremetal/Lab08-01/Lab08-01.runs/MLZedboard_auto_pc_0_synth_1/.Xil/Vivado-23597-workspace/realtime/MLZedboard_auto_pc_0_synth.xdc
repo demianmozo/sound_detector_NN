@@ -1,0 +1,6 @@
+set_property SRC_FILE_INFO {cfile:/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_auto_pc_0/MLZedboard_auto_pc_0_ooc.xdc rfile:../../../../../Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_auto_pc_0/MLZedboard_auto_pc_0_ooc.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_auto_pc_0_synth_1/dont_touch.xdc rfile:../../../dont_touch.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:55 export:INPUT save:INPUT read:FILTER_OUT_OF_CONTEXT} [current_design]
+create_clock -period 13.000 -name aclk [get_ports aclk]
+set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells inst]

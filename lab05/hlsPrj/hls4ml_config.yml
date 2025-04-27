@@ -1,0 +1,56 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    activation_3:
+      Precision:
+        result: ap_fixed<16,6>
+      Strategy: Stable
+      Trace: false
+    flatten_9:
+      Precision:
+        result: ap_fixed<16,6>
+      Trace: false
+    flatten_9_input:
+      Precision:
+        result: ap_fixed<16,6>
+      Trace: false
+    q_activation_6:
+      Precision:
+        result: ap_fixed<8,3>
+      Trace: false
+    q_activation_7:
+      Precision:
+        result: ap_fixed<8,3>
+      Trace: false
+    q_dense_10:
+      Precision:
+        bias: ap_fixed<8,2>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,2>
+      Trace: false
+    q_dense_11:
+      Precision:
+        bias: ap_fixed<8,2>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,2>
+      Trace: false
+    q_dense_9:
+      Precision:
+        bias: ap_fixed<8,2>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,2>
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'hlsPrj//keras_model.h5'
+OutputDir: hlsPrj/
+Part: xc7z020clg484-1
+ProjectName: myproject
+Stamp: 86B3cCE0
+Version: 1.0.0

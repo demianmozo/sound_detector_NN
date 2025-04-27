@@ -1,0 +1,95 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    activation_8:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    flatten_24:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    flatten_24_input:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    q_activation_18:
+      Precision:
+        result: fixed<8,5,RND_CONV,SAT>
+      Trace: false
+    q_activation_19:
+      Precision:
+        result: fixed<8,5,RND_CONV,SAT>
+      Trace: false
+    q_activation_20:
+      Precision:
+        result: fixed<8,5,RND_CONV,SAT>
+      Trace: false
+    q_activation_21:
+      Precision:
+        result: fixed<8,5,RND_CONV,SAT>
+      Trace: false
+    q_dense_26:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      Trace: false
+    q_dense_26_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    q_dense_27:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      Trace: false
+    q_dense_27_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    q_dense_28:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      Trace: false
+    q_dense_28_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    q_dense_29:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      Trace: false
+    q_dense_29_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    q_dense_30:
+      Precision:
+        bias: fixed<8,5>
+        result: fixed<16,6>
+        weight: fixed<8,5>
+      Trace: false
+    q_dense_30_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+KerasModel: !keras_model 'hlsPrj/student_qap_final/keras_model.h5'
+OutputDir: hlsPrj/student_qap_final
+Part: xc7z020clg484-1
+ProjectName: myproject
+Stamp: D32Fb91A
+Version: 1.0.0

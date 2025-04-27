@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="myproject_prj" solutionName="solution1" date="2025-04-11T03:53:03.161+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-223] Checking resource limit in 'dense_latency&lt;ap_fixed&lt;16, 7, 4, 0, 0>, ap_fixed&lt;16, 6, 5, 3, 0>, config11>': cannot find any operation of 'mul'." projectName="myproject_prj" solutionName="solution1" date="2025-04-11T03:50:23.413+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-223] Checking resource limit in 'dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;8, 2, 5, 3, 0>, config2>': cannot find any operation of 'mul'." projectName="myproject_prj" solutionName="solution1" date="2025-04-11T03:50:22.934+0200" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

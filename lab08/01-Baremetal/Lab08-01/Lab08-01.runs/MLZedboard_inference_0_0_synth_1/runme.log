@@ -1,0 +1,937 @@
+
+*** Running vivado
+    with args -log MLZedboard_inference_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLZedboard_inference_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source MLZedboard_inference_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1313.691 ; gain = 0.023 ; free physical = 165 ; free virtual = 6723
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/core-comblock/src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/myproject_prj/solution1/impl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MLZedboard_inference_0_0
+Command: synth_design -top MLZedboard_inference_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22645
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1978.055 ; gain = 372.770 ; free physical = 138 ; free virtual = 5340
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1312.910; parent = 1144.581; children = 168.329
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2994.211; parent = 1989.965; children = 1004.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_inference_0_0' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/synth/MLZedboard_inference_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'inference' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_8s_6ns_14_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6ns_14_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_8s_6ns_14_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6ns_14_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_8s_6s_14_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6s_14_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_8s_6s_14_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6s_14_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_16s_5ns_19_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5ns_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_16s_5ns_19_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5ns_19_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_16s_5s_19_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5s_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_16s_5s_19_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5s_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_32s_34ns_65_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_32s_34ns_65_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized0' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized0' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized2' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized2' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized3' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized3' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized4' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized4' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_inference_0_0' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/synth/MLZedboard_inference_0_0.v:53]
+WARNING: [Synth 8-7129] Port p_read[0] in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2282.773 ; gain = 677.488 ; free physical = 339 ; free virtual = 5161
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1485.189; parent = 1316.875; children = 168.329
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3287.023; parent = 2282.777; children = 1004.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2282.773 ; gain = 677.488 ; free physical = 283 ; free virtual = 5106
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1485.189; parent = 1316.875; children = 168.329
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3287.023; parent = 2282.777; children = 1004.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2282.773 ; gain = 677.488 ; free physical = 267 ; free virtual = 5091
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1485.189; parent = 1316.875; children = 168.329
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3287.023; parent = 2282.777; children = 1004.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2320.195 ; gain = 9.422 ; free physical = 149 ; free virtual = 4921
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/constraints/inference_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/constraints/inference_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2923.906 ; gain = 0.000 ; free physical = 1178 ; free virtual = 5542
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2923.906 ; gain = 0.000 ; free physical = 1129 ; free virtual = 5494
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:04 ; elapsed = 00:02:10 . Memory (MB): peak = 2923.906 ; gain = 1318.621 ; free physical = 1647 ; free virtual = 6014
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2185.676; parent = 2003.554; children = 192.671
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3928.156; parent = 2923.910; children = 1004.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:04 ; elapsed = 00:02:10 . Memory (MB): peak = 2923.906 ; gain = 1318.621 ; free physical = 1647 ; free virtual = 6014
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2185.676; parent = 2003.554; children = 192.671
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3928.156; parent = 2923.910; children = 1004.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:11 . Memory (MB): peak = 2923.906 ; gain = 1318.621 ; free physical = 1646 ; free virtual = 6012
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2185.676; parent = 2003.554; children = 192.671
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3928.156; parent = 2923.910; children = 1004.246
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln841_12_reg_1137_reg' and it is trimmed from '11' to '8' bits. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1513_reg_17222_reg' and it is trimmed from '65' to '46' bits. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference.v:6610]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:32 ; elapsed = 00:02:40 . Memory (MB): peak = 2923.906 ; gain = 1318.621 ; free physical = 1139 ; free virtual = 5516
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2185.676; parent = 2003.554; children = 192.671
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3928.156; parent = 2923.910; children = 1004.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   19 Bit       Adders := 4     
+	   3 Input   19 Bit       Adders := 18    
+	   2 Input   16 Bit       Adders := 14    
+	   4 Input   16 Bit       Adders := 4     
+	   6 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input   15 Bit       Adders := 3     
+	   2 Input   14 Bit       Adders := 4     
+	   4 Input   14 Bit       Adders := 2     
+	   3 Input   14 Bit       Adders := 1     
+	   5 Input   14 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 7     
+	   2 Input   13 Bit       Adders := 5     
+	   4 Input   13 Bit       Adders := 2     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 277   
+	   7 Input    8 Bit       Adders := 14    
+	   6 Input    8 Bit       Adders := 145   
+	   2 Input    8 Bit       Adders := 43    
+	   4 Input    8 Bit       Adders := 35    
+	   5 Input    8 Bit       Adders := 98    
+	   9 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               46 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 786   
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 642   
+	                6 Bit    Registers := 759   
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	              32x35  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 1     
+	  16 Input   15 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_16s_5ns_19_1_1_U784/dout, operation Mode is: A2*(B:0xb).
+DSP Report: register p_read_16_reg_1520_reg is absorbed into DSP mul_16s_5ns_19_1_1_U784/dout.
+DSP Report: operator mul_16s_5ns_19_1_1_U784/dout is absorbed into DSP mul_16s_5ns_19_1_1_U784/dout.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:19]
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: (A:0x10102)*B.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: A*(B:0x10102).
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+WARNING: [Synth 8-7129] Port p_read[0] in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_15_reg_1102_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_15_reg_1102_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read114_reg_1121_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read114_reg_1121_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_14_reg_1095_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_14_reg_1095_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[6]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read13_reg_1129_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read13_reg_1129_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[5]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[5]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[4]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[3]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/\mul_ln841_1_reg_236_reg[0] )
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[2]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[2]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[1]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[1]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[0]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_1_reg_19512_reg[15]' (FDE) to 'layer5_out_V_1_reg_19512_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_reg_19507_reg[15]' (FDE) to 'layer5_out_V_reg_19507_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_reg_19507_reg[14]' (FDE) to 'layer5_out_V_reg_19507_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_5_reg_19532_reg[15]' (FDE) to 'layer5_out_V_5_reg_19532_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_2_reg_19517_reg[15]' (FDE) to 'layer5_out_V_2_reg_19517_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_6_reg_19537_reg[15]' (FDE) to 'layer5_out_V_6_reg_19537_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_2_reg_19517_reg[14]' (FDE) to 'layer5_out_V_2_reg_19517_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_3_reg_19522_reg[15]' (FDE) to 'layer5_out_V_3_reg_19522_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_4_reg_19527_reg[15]' (FDE) to 'layer5_out_V_4_reg_19527_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_6_reg_19537_reg[14]' (FDE) to 'layer5_out_V_6_reg_19537_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_4_reg_19527_reg[14]' (FDE) to 'layer5_out_V_4_reg_19527_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_1_reg_19512_reg[0]' (FDE) to 'layer5_out_V_6_reg_19537_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_reg_19507_reg[0]' (FDE) to 'layer5_out_V_6_reg_19537_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_6_reg_19537_reg[0]' (FDE) to 'layer5_out_V_4_reg_19527_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_3_reg_19522_reg[0]' (FDE) to 'layer5_out_V_4_reg_19527_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_2_reg_19517_reg[0]' (FDE) to 'layer5_out_V_4_reg_19527_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer5_out_V_4_reg_19527_reg[0] )
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[4]' (FDE) to 'mul_ln1513_reg_17222_reg[44]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[3]' (FDE) to 'mul_ln1513_reg_17222_reg[43]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[2]' (FDE) to 'mul_ln1513_reg_17222_reg[42]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[1]' (FDE) to 'mul_ln1513_reg_17222_reg[41]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[0]' (FDE) to 'mul_ln1513_reg_17222_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mul_ln1513_reg_17222_reg[45]' (FDE) to 'tmp_14_reg_17233_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_4_reg_19527_reg[0]' (FDE) to 'layer5_out_V_5_reg_19532_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer5_out_V_5_reg_19532_reg[0] )
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[10]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[11]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[12]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[13]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:46 ; elapsed = 00:06:30 . Memory (MB): peak = 2927.828 ; gain = 1322.543 ; free physical = 644 ; free virtual = 1734
+Synthesis current peak Physical Memory [PSS] (MB): peak = 5775.475; parent = 2003.554; children = 4790.759
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12408.465; parent = 2923.914; children = 9484.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                               | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s | A2*(B:0xb)     | 16     | 5      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | (A:0x10102)*B  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | (PCIN>>17)+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | A*(B:0x10102)  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | (PCIN>>17)+A*B | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------------------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:17 ; elapsed = 00:07:02 . Memory (MB): peak = 2927.828 ; gain = 1322.543 ; free physical = 160 ; free virtual = 811
+Synthesis current peak Physical Memory [PSS] (MB): peak = 5775.475; parent = 2003.554; children = 4790.759
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12408.465; parent = 2923.914; children = 9484.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:44 ; elapsed = 00:07:31 . Memory (MB): peak = 2927.828 ; gain = 1322.543 ; free physical = 350 ; free virtual = 761
+Synthesis current peak Physical Memory [PSS] (MB): peak = 5775.475; parent = 2003.554; children = 4790.759
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12408.465; parent = 2923.914; children = 9484.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log MLZedboard_inference_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLZedboard_inference_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source MLZedboard_inference_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1311.754 ; gain = 0.023 ; free physical = 4096 ; free virtual = 10521
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/core-comblock/src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/myproject_prj/solution1/impl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: MLZedboard_inference_0_0
+Command: synth_design -top MLZedboard_inference_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5295
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1978.148 ; gain = 372.770 ; free physical = 2310 ; free virtual = 8787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1314.116; parent = 1145.502; children = 168.614
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2981.965; parent = 1990.059; children = 991.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MLZedboard_inference_0_0' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/synth/MLZedboard_inference_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'inference' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_8_2_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_8s_6ns_14_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6ns_14_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_8s_6ns_14_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6ns_14_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_8s_6s_14_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6s_14_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_8s_6s_14_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_8s_6s_14_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config7_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_16s_5ns_19_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5ns_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_16s_5ns_19_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5ns_19_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_16s_5s_19_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5s_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_16s_5s_19_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_16s_5s_19_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inference_mul_32s_34ns_65_1_1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_mul_32s_34ns_65_1_1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized0' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized0' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized1' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized1' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized2' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized2' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized3' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized3' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inference_regslice_both__parameterized4' [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference_regslice_both__parameterized4' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inference' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'MLZedboard_inference_0_0' (0#1) [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/synth/MLZedboard_inference_0_0.v:53]
+WARNING: [Synth 8-7129] Port p_read[0] in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read1[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read2[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read3[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[4] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[3] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[2] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[1] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p_read4[0] in module inference_linear_ap_fixed_16_6_5_3_0_ap_fixed_8_3_5_3_0_linear_config4_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_8_2_5_3_0_config2_s is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2281.867 ; gain = 676.488 ; free physical = 2246 ; free virtual = 8757
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1487.976; parent = 1319.361; children = 168.614
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.777; parent = 2281.871; children = 991.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2281.867 ; gain = 676.488 ; free physical = 2247 ; free virtual = 8757
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1487.976; parent = 1319.361; children = 168.614
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.777; parent = 2281.871; children = 991.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2281.867 ; gain = 676.488 ; free physical = 2247 ; free virtual = 8757
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1487.976; parent = 1319.361; children = 168.614
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.777; parent = 2281.871; children = 991.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2319.289 ; gain = 9.422 ; free physical = 2108 ; free virtual = 8634
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/constraints/inference_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ip/MLZedboard_inference_0_0/constraints/inference_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2920.000 ; gain = 0.000 ; free physical = 1291 ; free virtual = 7817
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 2922.969 ; gain = 2.969 ; free physical = 1292 ; free virtual = 7818
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 2922.969 ; gain = 1317.590 ; free physical = 2391 ; free virtual = 8916
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2144.764; parent = 1976.177; children = 182.522
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3914.879; parent = 2922.973; children = 991.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 2922.969 ; gain = 1317.590 ; free physical = 2391 ; free virtual = 8916
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2144.764; parent = 1976.177; children = 182.522
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3914.879; parent = 2922.973; children = 991.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 2922.969 ; gain = 1317.590 ; free physical = 2391 ; free virtual = 8916
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2144.764; parent = 1976.177; children = 182.522
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3914.879; parent = 2922.973; children = 991.906
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln841_12_reg_1137_reg' and it is trimmed from '11' to '8' bits. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s.v:219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1513_reg_17222_reg' and it is trimmed from '65' to '46' bits. [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference.v:6610]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 2922.969 ; gain = 1317.590 ; free physical = 3041 ; free virtual = 9575
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2144.764; parent = 1976.177; children = 193.536
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3914.879; parent = 2922.973; children = 991.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   19 Bit       Adders := 4     
+	   3 Input   19 Bit       Adders := 18    
+	   2 Input   16 Bit       Adders := 14    
+	   4 Input   16 Bit       Adders := 4     
+	   6 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input   15 Bit       Adders := 3     
+	   2 Input   14 Bit       Adders := 4     
+	   4 Input   14 Bit       Adders := 2     
+	   3 Input   14 Bit       Adders := 1     
+	   5 Input   14 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 7     
+	   2 Input   13 Bit       Adders := 5     
+	   4 Input   13 Bit       Adders := 2     
+	   3 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 277   
+	   7 Input    8 Bit       Adders := 14    
+	   6 Input    8 Bit       Adders := 145   
+	   2 Input    8 Bit       Adders := 43    
+	   4 Input    8 Bit       Adders := 35    
+	   5 Input    8 Bit       Adders := 98    
+	   9 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               46 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 786   
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 642   
+	                6 Bit    Registers := 759   
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	              32x35  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 1     
+	  16 Input   15 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_16s_5ns_19_1_1_U784/dout, operation Mode is: A2*(B:0xb).
+DSP Report: register p_read_16_reg_1520_reg is absorbed into DSP mul_16s_5ns_19_1_1_U784/dout.
+DSP Report: operator mul_16s_5ns_19_1_1_U784/dout is absorbed into DSP mul_16s_5ns_19_1_1_U784/dout.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.gen/sources_1/bd/MLZedboard/ipshared/252c/hdl/verilog/inference_mul_32s_34ns_65_1_1.v:19]
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: (A:0x10102)*B.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: A*(B:0x10102).
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: Generating DSP mul_32s_34ns_65_1_1_U807/dout, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+DSP Report: operator mul_32s_34ns_65_1_1_U807/dout is absorbed into DSP mul_32s_34ns_65_1_1_U807/dout.
+WARNING: [Synth 8-7129] Port p_read[0] in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config11_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module inference_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_15_reg_1102_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_15_reg_1102_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read114_reg_1121_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read114_reg_1121_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_14_reg_1095_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read_14_reg_1095_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[6]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read13_reg_1129_reg[7]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read13_reg_1129_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[5]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[5]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[4]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[4]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[3]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/\mul_ln841_1_reg_236_reg[0] )
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[2]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[2]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[1]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[1]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/sext_ln841_12_reg_1137_reg[0]' (FD) to 'grp_dense_latency_ap_fixed_8_3_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_5497/p_read215_reg_1112_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_1_reg_19512_reg[15]' (FDE) to 'layer5_out_V_1_reg_19512_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_reg_19507_reg[15]' (FDE) to 'layer5_out_V_reg_19507_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_reg_19507_reg[14]' (FDE) to 'layer5_out_V_reg_19507_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_5_reg_19532_reg[15]' (FDE) to 'layer5_out_V_5_reg_19532_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_2_reg_19517_reg[15]' (FDE) to 'layer5_out_V_2_reg_19517_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_6_reg_19537_reg[15]' (FDE) to 'layer5_out_V_6_reg_19537_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_2_reg_19517_reg[14]' (FDE) to 'layer5_out_V_2_reg_19517_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_3_reg_19522_reg[15]' (FDE) to 'layer5_out_V_3_reg_19522_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_4_reg_19527_reg[15]' (FDE) to 'layer5_out_V_4_reg_19527_reg[14]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_6_reg_19537_reg[14]' (FDE) to 'layer5_out_V_6_reg_19537_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_4_reg_19527_reg[14]' (FDE) to 'layer5_out_V_4_reg_19527_reg[13]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_1_reg_19512_reg[0]' (FDE) to 'layer5_out_V_6_reg_19537_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_reg_19507_reg[0]' (FDE) to 'layer5_out_V_6_reg_19537_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_6_reg_19537_reg[0]' (FDE) to 'layer5_out_V_4_reg_19527_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_3_reg_19522_reg[0]' (FDE) to 'layer5_out_V_4_reg_19527_reg[0]'
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_2_reg_19517_reg[0]' (FDE) to 'layer5_out_V_4_reg_19527_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer5_out_V_4_reg_19527_reg[0] )
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[4]' (FDE) to 'mul_ln1513_reg_17222_reg[44]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[3]' (FDE) to 'mul_ln1513_reg_17222_reg[43]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[2]' (FDE) to 'mul_ln1513_reg_17222_reg[42]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[1]' (FDE) to 'mul_ln1513_reg_17222_reg[41]'
+INFO: [Synth 8-3886] merging instance 'tmp_14_reg_17233_reg[0]' (FDE) to 'mul_ln1513_reg_17222_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mul_ln1513_reg_17222_reg[45]' (FDE) to 'tmp_14_reg_17233_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc1_input_input_V_1_fu_1670_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\result_1_data_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'layer5_out_V_4_reg_19527_reg[0]' (FDE) to 'layer5_out_V_5_reg_19532_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer5_out_V_5_reg_19532_reg[0] )
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[10]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[11]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/trunc_ln818_25_reg_1534_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read18_reg_1512_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read_16_reg_1520_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read29_reg_1504_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read310_reg_1497_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[13]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[12]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read411_reg_1489_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[15]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[14]' (FD) to 'grp_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s_fu_5517/p_read512_reg_1484_reg[13]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:04:04 . Memory (MB): peak = 2926.891 ; gain = 1321.512 ; free physical = 1356 ; free virtual = 5511
+Synthesis current peak Physical Memory [PSS] (MB): peak = 5986.084; parent = 1976.177; children = 4833.688
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12393.723; parent = 2926.891; children = 9470.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                               | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s | A2*(B:0xb)     | 16     | 5      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | (A:0x10102)*B  | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | (PCIN>>17)+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | A*(B:0x10102)  | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | (PCIN>>17)+A*B | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------------------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:04:24 . Memory (MB): peak = 2926.891 ; gain = 1321.512 ; free physical = 1175 ; free virtual = 5365
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6029.104; parent = 1976.177; children = 4833.688
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12393.723; parent = 2926.891; children = 9470.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:07 ; elapsed = 00:04:47 . Memory (MB): peak = 2926.891 ; gain = 1321.512 ; free physical = 1130 ; free virtual = 5325
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6063.354; parent = 1976.177; children = 4833.688
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12393.723; parent = 2926.891; children = 9470.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:31 ; elapsed = 00:05:31 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 436 ; free virtual = 4640
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6714.965; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:52 ; elapsed = 00:05:51 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 422 ; free virtual = 4655
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6714.965; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:52 ; elapsed = 00:05:52 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 422 ; free virtual = 4655
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6714.965; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:59 ; elapsed = 00:05:59 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 420 ; free virtual = 4654
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6722.040; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:59 ; elapsed = 00:06:00 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 420 ; free virtual = 4654
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6722.091; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:01 ; elapsed = 00:06:02 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 419 ; free virtual = 4653
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6724.005; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:01 ; elapsed = 00:06:02 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 419 ; free virtual = 4653
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6724.005; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                               | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|inference_dense_latency_ap_fixed_16_7_4_0_0_ap_fixed_16_6_5_3_0_config8_s | A''*B        | 30     | 4      | -      | -      | 21     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | PCIN>>17+A*B | 16     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|inference__GC0                                                            | PCIN>>17+A*B | 0      | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------------------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |  4586|
+|2     |DSP48E1 |     5|
+|5     |LUT1    |  3905|
+|6     |LUT2    |  1555|
+|7     |LUT3    |  5349|
+|8     |LUT4    |  4291|
+|9     |LUT5    |   938|
+|10    |LUT6    |  2854|
+|11    |FDRE    | 14817|
+|12    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:01 ; elapsed = 00:06:03 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 419 ; free virtual = 4653
+Synthesis current peak Physical Memory [PSS] (MB): peak = 6724.083; parent = 1976.177; children = 5356.104
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 12806.484; parent = 2930.980; children = 9875.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:36 ; elapsed = 00:05:33 . Memory (MB): peak = 2934.895 ; gain = 688.414 ; free physical = 5540 ; free virtual = 9775
+Synthesis Optimization Complete : Time (s): cpu = 00:04:08 ; elapsed = 00:06:06 . Memory (MB): peak = 2934.895 ; gain = 1329.516 ; free physical = 5552 ; free virtual = 9778
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2934.895 ; gain = 0.000 ; free physical = 5508 ; free virtual = 9743
+INFO: [Netlist 29-17] Analyzing 4591 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2938.977 ; gain = 0.000 ; free physical = 5441 ; free virtual = 9678
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5a79f7a6
+INFO: [Common 17-83] Releasing license: Synthesis
+163 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:33 ; elapsed = 00:06:32 . Memory (MB): peak = 2938.977 ; gain = 1627.223 ; free physical = 5691 ; free virtual = 9928
+INFO: [Common 17-1381] The checkpoint '/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/MLZedboard_inference_0_0.dcp' has been generated.
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3011.012 ; gain = 0.000 ; free physical = 5447 ; free virtual = 9803
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP MLZedboard_inference_0_0, cache-ID = c320b4e82358919b
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_inference_0_0_synth_1/MLZedboard_inference_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MLZedboard_inference_0_0_utilization_synth.rpt -pb MLZedboard_inference_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3011.012 ; gain = 0.000 ; free physical = 5465 ; free virtual = 9868
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 14:15:33 2025...

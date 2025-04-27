@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="myproject_test.cpp" path="/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/myproject_test.cpp"/>
+    <originFiles name="weights" path="/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/firmware/weights"/>
+    <originFiles name="tb_data" path="/home/student/Documents/laburar_aca/labs/lab05/hlsPrj/tb_data"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

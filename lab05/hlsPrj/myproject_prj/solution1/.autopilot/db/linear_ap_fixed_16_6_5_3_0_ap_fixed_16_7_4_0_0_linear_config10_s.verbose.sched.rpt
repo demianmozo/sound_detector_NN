@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'linear_ap_fixed_16_6_5_3_0_ap_fixed_16_7_4_0_0_linear_config10_s'
+================================================================
+* Date:           Fri Apr 11 03:51:10 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  12.00 ns|  1.944 ns|     1.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.94>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%p_read96 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read9" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 2 'read' 'p_read96' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%p_read65 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read6" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 3 'read' 'p_read65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_read44 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read4" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 4 'read' 'p_read44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_read33 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read3" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 5 'read' 'p_read33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_read22 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read2" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 6 'read' 'p_read22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_read_13 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 7 'read' 'p_read_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_11)   --->   "%trunc_ln29 = trunc i16 %p_read96" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 8 'trunc' 'trunc_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_10)   --->   "%trunc_ln29_7 = trunc i16 %p_read65" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 9 'trunc' 'trunc_ln29_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_9)   --->   "%trunc_ln29_8 = trunc i16 %p_read44" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 10 'trunc' 'trunc_ln29_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_8)   --->   "%trunc_ln29_9 = trunc i16 %p_read33" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 11 'trunc' 'trunc_ln29_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_7)   --->   "%trunc_ln29_10 = trunc i16 %p_read22" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 12 'trunc' 'trunc_ln29_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node add_ln377)   --->   "%trunc_ln29_11 = trunc i16 %p_read_13" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 13 'trunc' 'trunc_ln29_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specpipeline_ln29 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [firmware/nnet_utils/nnet_activation.h:29]   --->   Operation 14 'specpipeline' 'specpipeline_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node add_ln377)   --->   "%p_Val2_s = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %p_read_13, i32 1, i32 15"   --->   Operation 15 'partselect' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns) (grouped into LUT with out node add_ln377)   --->   "%sext_ln818 = sext i15 %p_Val2_s"   --->   Operation 16 'sext' 'sext_ln818' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node add_ln377)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %p_read_13, i32 1"   --->   Operation 17 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node add_ln377)   --->   "%and_ln374 = and i1 %tmp, i1 %trunc_ln29_11"   --->   Operation 18 'and' 'and_ln374' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node add_ln377)   --->   "%zext_ln377 = zext i1 %and_ln374"   --->   Operation 19 'zext' 'zext_ln377' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.94ns) (out node of the LUT)   --->   "%add_ln377 = add i16 %zext_ln377, i16 %sext_ln818"   --->   Operation 20 'add' 'add_ln377' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_7)   --->   "%p_Val2_7 = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %p_read22, i32 1, i32 15"   --->   Operation 21 'partselect' 'p_Val2_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_7)   --->   "%sext_ln818_7 = sext i15 %p_Val2_7"   --->   Operation 22 'sext' 'sext_ln818_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_7)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %p_read22, i32 1"   --->   Operation 23 'bitselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_7)   --->   "%and_ln374_7 = and i1 %tmp_7, i1 %trunc_ln29_10"   --->   Operation 24 'and' 'and_ln374_7' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_7)   --->   "%zext_ln377_7 = zext i1 %and_ln374_7"   --->   Operation 25 'zext' 'zext_ln377_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.94ns) (out node of the LUT)   --->   "%add_ln377_7 = add i16 %zext_ln377_7, i16 %sext_ln818_7"   --->   Operation 26 'add' 'add_ln377_7' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_8)   --->   "%p_Val2_8 = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %p_read33, i32 1, i32 15"   --->   Operation 27 'partselect' 'p_Val2_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_8)   --->   "%sext_ln818_8 = sext i15 %p_Val2_8"   --->   Operation 28 'sext' 'sext_ln818_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_8)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %p_read33, i32 1"   --->   Operation 29 'bitselect' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_8)   --->   "%and_ln374_8 = and i1 %tmp_8, i1 %trunc_ln29_9"   --->   Operation 30 'and' 'and_ln374_8' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_8)   --->   "%zext_ln377_8 = zext i1 %and_ln374_8"   --->   Operation 31 'zext' 'zext_ln377_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (1.94ns) (out node of the LUT)   --->   "%add_ln377_8 = add i16 %zext_ln377_8, i16 %sext_ln818_8"   --->   Operation 32 'add' 'add_ln377_8' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_9)   --->   "%p_Val2_9 = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %p_read44, i32 1, i32 15"   --->   Operation 33 'partselect' 'p_Val2_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_9)   --->   "%sext_ln818_9 = sext i15 %p_Val2_9"   --->   Operation 34 'sext' 'sext_ln818_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_9)   --->   "%tmp_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %p_read44, i32 1"   --->   Operation 35 'bitselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_9)   --->   "%and_ln374_9 = and i1 %tmp_9, i1 %trunc_ln29_8"   --->   Operation 36 'and' 'and_ln374_9' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_9)   --->   "%zext_ln377_9 = zext i1 %and_ln374_9"   --->   Operation 37 'zext' 'zext_ln377_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (1.94ns) (out node of the LUT)   --->   "%add_ln377_9 = add i16 %zext_ln377_9, i16 %sext_ln818_9"   --->   Operation 38 'add' 'add_ln377_9' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_10)   --->   "%p_Val2_10 = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %p_read65, i32 1, i32 15"   --->   Operation 39 'partselect' 'p_Val2_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_10)   --->   "%sext_ln818_10 = sext i15 %p_Val2_10"   --->   Operation 40 'sext' 'sext_ln818_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_10)   --->   "%tmp_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %p_read65, i32 1"   --->   Operation 41 'bitselect' 'tmp_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_10)   --->   "%and_ln374_10 = and i1 %tmp_10, i1 %trunc_ln29_7"   --->   Operation 42 'and' 'and_ln374_10' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_10)   --->   "%zext_ln377_10 = zext i1 %and_ln374_10"   --->   Operation 43 'zext' 'zext_ln377_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (1.94ns) (out node of the LUT)   --->   "%add_ln377_10 = add i16 %zext_ln377_10, i16 %sext_ln818_10"   --->   Operation 44 'add' 'add_ln377_10' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_11)   --->   "%p_Val2_11 = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %p_read96, i32 1, i32 15"   --->   Operation 45 'partselect' 'p_Val2_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_11)   --->   "%sext_ln818_11 = sext i15 %p_Val2_11"   --->   Operation 46 'sext' 'sext_ln818_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_11)   --->   "%tmp_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %p_read96, i32 1"   --->   Operation 47 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_11)   --->   "%and_ln374_11 = and i1 %tmp_11, i1 %trunc_ln29"   --->   Operation 48 'and' 'and_ln374_11' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node add_ln377_11)   --->   "%zext_ln377_11 = zext i1 %and_ln374_11"   --->   Operation 49 'zext' 'zext_ln377_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (1.94ns) (out node of the LUT)   --->   "%add_ln377_11 = add i16 %zext_ln377_11, i16 %sext_ln818_11"   --->   Operation 50 'add' 'add_ln377_11' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%newret = insertvalue i96 <undef>, i16 %add_ln377"   --->   Operation 51 'insertvalue' 'newret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%newret2 = insertvalue i96 %newret, i16 %add_ln377_7"   --->   Operation 52 'insertvalue' 'newret2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%newret4 = insertvalue i96 %newret2, i16 %add_ln377_8"   --->   Operation 53 'insertvalue' 'newret4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%newret6 = insertvalue i96 %newret4, i16 %add_ln377_9"   --->   Operation 54 'insertvalue' 'newret6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%newret8 = insertvalue i96 %newret6, i16 %add_ln377_10"   --->   Operation 55 'insertvalue' 'newret8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%newret1 = insertvalue i96 %newret8, i16 %add_ln377_11"   --->   Operation 56 'insertvalue' 'newret1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%ret_ln377 = ret i96 %newret1"   --->   Operation 57 'ret' 'ret_ln377' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 12ns, clock uncertainty: 1.5ns.
+
+ <State 1>: 1.94ns
+The critical path consists of the following:
+	wire read operation ('p_read_13', firmware/nnet_utils/nnet_activation.h:29) on port 'p_read' (firmware/nnet_utils/nnet_activation.h:29) [12]  (0 ns)
+	'and' operation ('and_ln374') [23]  (0 ns)
+	'add' operation ('add_ln377') [25]  (1.94 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

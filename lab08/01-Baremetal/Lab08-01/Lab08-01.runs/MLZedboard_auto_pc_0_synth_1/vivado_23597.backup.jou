@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Apr 11 05:32:09 2025
+# Process ID: 23597
+# Current directory: /home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_auto_pc_0_synth_1
+# Command line: vivado -log MLZedboard_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MLZedboard_auto_pc_0.tcl
+# Log file: /home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_auto_pc_0_synth_1/MLZedboard_auto_pc_0.vds
+# Journal file: /home/student/Documents/laburar_aca/labs/lab08/01-Baremetal/Lab08-01/Lab08-01.runs/MLZedboard_auto_pc_0_synth_1/vivado.jou
+# Running On: workspace, OS: Linux, CPU Frequency: 2794.754 MHz, CPU Physical cores: 4, Host memory: 9345 MB
+#-----------------------------------------------------------
+source MLZedboard_auto_pc_0.tcl -notrace

@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "myproject",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/student\/Documents\/PROYECTO_FINAL\/lab05\/hlsPrj\/build_prj.tcl",
+          "sourceLine": "183",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "myproject"
+              }]
+          }
+        }]
+    }]}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/home/ro/kaleido/repo/training-ML-FPGA-MarDelPlata-Argentina2025/labs/lab05/hlsPrj/student_qap_final/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="/home/ro/kaleido/repo/training-ML-FPGA-MarDelPlata-Argentina2025/labs/lab05/hlsPrj/student_qap_final/tb_data"/>
+    <originFiles name="weights" path="/home/ro/kaleido/repo/training-ML-FPGA-MarDelPlata-Argentina2025/labs/lab05/hlsPrj/student_qap_final/firmware/weights"/>
+    <originFiles name="myproject_test.cpp" path="/home/ro/kaleido/repo/training-ML-FPGA-MarDelPlata-Argentina2025/labs/lab05/hlsPrj/student_qap_final/myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
