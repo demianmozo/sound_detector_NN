@@ -27,3 +27,8 @@ The course covered topics including:
 
 Course duration: **46 hours**
 Date: **April 1–11, 2025**
+
+## Certificate
+
+[![Certificate](/certificate.png)](/certificadoCursoMarDelPlata-2025-MOZO_firmado.pdf)
+
